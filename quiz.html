@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ශ්‍රේණිය 9 ක්විස්</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>ශ්‍රේණිය 9 ක්විස්</h1>
+</header>
+
+<section id="quiz">
+  <h2>විෂය තෝරන්න</h2>
+  <select id="subjectSelect">
+    <option value="">-- විෂය තෝරන්න --</option>
+    <option value="math">ගණිතය</option>
+    <option value="science">විද්‍යාව</option>
+    <option value="sinhala">සිංහල</option>
+  </select>
+  <button onclick="startQuiz()">Start Quiz</button>
+
+  <div id="quiz-container" style="margin-top:20px;"></div>
+  
+  <button id="submitBtn" style="display:none;" onclick="submitQuiz()">Submit Quiz</button>
+  <button id="retryBtn" style="display:none;" onclick="retryQuiz()">Retry Quiz</button>
+  
+  <p id="quizResult"></p>
+  <a href="index.html" class="button">උපරිම පිටුවට ආපසු යන්න</a>
+</section>
+
+<script src="quizzes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
